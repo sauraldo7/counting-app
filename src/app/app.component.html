@@ -1,13 +1,13 @@
 <body class="container">
  <HEader>
-  <h1>Couting App</h1>
+  <h1>{{ title }}</h1>
  </HEader> 
  <main>
-   <h2>Current Couting is: 0</h2>
+   <h2>Current Couting is: {{ count }}</h2>
  </main>
- <button>Reset count </button>
- <button>Increase count</button>
- <button>Decrease count</button>
+ <button (click)="handleReset()" >Reset count </button>
+ <button (click)="handleIncrese()" >Increase count</button>
+ <button (click)="handleDecrese()" >Decrease count</button>
  
 
 </body>
